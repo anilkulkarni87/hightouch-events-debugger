@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy — Hightouch Events Debugger (MV3)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      margin: 32px;
+      max-width: 860px;
+      color: #111827;
+    }
+    h1, h2 {
+      color: #050816;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy — Hightouch Events Debugger (MV3)</h1>
+  <p><strong>Last updated:</strong> 2025-11-11</p>
+
+  <p>Hightouch Events Debugger (“the Extension”) is a Chrome/Edge DevTools panel that helps developers inspect Hightouch Events SDK calls in their own browser. This is a community-built tool and is not an official Hightouch product.</p>
+
+  <p>The Extension is designed to be <strong>local-only</strong> and does <strong>not</strong> send any captured data to servers controlled by the developer.</p>
+
+  <h2>Data we collect</h2>
+  <ul>
+    <li>We do <strong>not</strong> collect, transmit, sell, or share any personal data.</li>
+    <li>The Extension does not include analytics, trackers, or any third-party SDKs that send data back to us.</li>
+    <li>All inspection and summarization of network traffic happens inside your browser’s DevTools context while the panel is open.</li>
+  </ul>
+
+  <h2>How the Extension works</h2>
+  <p>The Extension adds a custom tab inside Chrome/Edge DevTools. While DevTools is open, it can listen to network requests and identify those that match certain hosts such as <code>events.hightouch.com</code> (or other hosts you configure).</p>
+
+  <p>For matching requests, the Extension may read:</p>
+  <ul>
+    <li>Request metadata (method, URL, status, headers, content type)</li>
+    <li>JSON request bodies, in order to display a summarized view of event payloads</li>
+  </ul>
+
+  <p>All of this processing happens <strong>locally</strong> in your browser. No event data is sent back to us.</p>
+
+  <p>Configuration such as host filters, toggles, and custom rules is stored using the browser’s extension storage (for example, <code>chrome.storage</code>).</p>
+
+  <h2>Use of data and retention</h2>
+  <ul>
+    <li>The Extension does not store copies of network payloads or logs outside the DevTools session.</li>
+    <li>Parsed data is kept only in memory while DevTools and the panel are open.</li>
+    <li>Configuration settings (hosts, filter text, redaction rules, presets) may be stored in your browser profile so that the panel behaves consistently between sessions.</li>
+  </ul>
+
+  <h2>Sharing of data</h2>
+  <ul>
+    <li>We do <strong>not</strong> share any data with third parties.</li>
+    <li>The Extension does not send your HTTP traffic, headers, or payloads to us or to any other external service.</li>
+    <li>The Extension does not use ad networks, analytics services, or tracking scripts.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <p>The Extension requests the minimum set of permissions necessary to function:</p>
+  <ul>
+    <li><strong>DevTools</strong> &mdash; required to create a custom DevTools panel and observe network requests while DevTools is open.</li>
+    <li><strong>Storage</strong> &mdash; used only to save local configuration such as event hosts, panel toggles, summarization settings, and redaction rules.</li>
+    <li><strong>Host permissions</strong> (e.g. <code>https://events.hightouch.com/*</code>) &mdash; used so the panel can recognize and highlight event traffic in your local DevTools view. These permissions do not cause additional network requests by themselves.</li>
+  </ul>
+
+  <h2>Redaction and security</h2>
+  <p>The Extension provides basic redaction options for display. Certain patterns (such as emails or long tokens) may be masked in the UI by default, and you can define additional custom redaction rules to obscure fields like <code>writeKey</code>, session IDs, or customer identifiers.</p>
+
+  <p><strong>Important:</strong> Redaction is applied only to what you see in the DevTools panel and exported CSV files. It does <strong>not</strong> modify the actual HTTP requests that your site sends to Hightouch or any other service.</p>
+
+  <p>The security of your environment also depends on your browser, operating system, and device. If your machine or browser profile is compromised, network traffic may be visible to attackers regardless of this Extension.</p>
+
+  <h2>Children’s privacy</h2>
+  <p>The Extension is a developer tool intended for technical users and is not designed for children or for individuals under the age of 13. We do not knowingly collect or process personal information from children.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>You can disable or remove the Extension at any time via the browser’s extensions page (for example, <code>chrome://extensions</code>).</li>
+    <li>You may clear extension data through your browser settings or by uninstalling the Extension.</li>
+    <li>If you export configuration, the file is generated locally and stored only where you choose to save it.</li>
+  </ul>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the “Last updated” date at the top of this page. Material changes may also be mentioned in the project’s documentation or release notes.</p>
+
+  <h2>Contact</h2>
+  <p>If you have questions or concerns about this Privacy Policy or about the Extension, please contact:</p>
+  <p><strong>Email:</strong> <a href="mailto:anil77k@gmail.com">Mail Here</a></p>
+  <p>(Replace this with your preferred contact address.)</p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "hightouch_events_debugger",
+  "version": "0.0.0-test",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^1.0.0"
+  }
+}

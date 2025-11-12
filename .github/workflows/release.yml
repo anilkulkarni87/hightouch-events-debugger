@@ -1,0 +1,20 @@
+name: Release zip
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  build-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip extension
+        run: |
+          cd extension
+          zip -r ../hightouch-debugger.zip .
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: hightouch-debugger.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.SEC_TOKEN }}
