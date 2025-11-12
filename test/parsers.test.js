@@ -41,7 +41,7 @@ describe('parsers defaultExtractors (Hightouch)', () => {
       customFields: { 'hightouch-event': { includeAll: true, keys: ['type', 'anonymousId'] } }
     };
 
-    expect(ex.match(ctx)).toBe(true);
+    expect(ex.match(ctx)).toBeTruthy();
 
     const summary = ex.summarize(ctx);
 
